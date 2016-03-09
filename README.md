@@ -60,43 +60,53 @@ As per my understanding the term “Learning to Learn” is self-descriptive. We
 
 ![Preferece Discovery](https://github.com/AkshayAgarwal007/First-Discovery-of-Preferences/blob/master/img/fluid2.png "Preference Discovery")
 
-** The virtual keyboard would be implemented in a far better way that doesn’t affect the game size and provides a seamless user experience. This is just for demonstration purpose.)
+** *The virtual keyboard would be implemented in a far better way that doesn’t affect the game size and provides a seamless user experience. This is just for demonstration purpose.)*
 
-* Step 3: The method adopted is nothing but the user’s preference (say in this case he uses the virtual keyboard to type the name of the fruit) and in this case it’s a digital preference. By telling the user about his preference we are applying the idea of learning to learn.
+* Step 3: The method adopted is nothing but the user’s preference (say in this case he uses the virtual keyboard to type the name of the fruit) and in this case it’s a digital preference. By telling the user about his preference we are applying the idea of learning to learn. And this has both the idea of preference discovery and setting preferences up.
 
-![Digital Preference](https://github.com/AkshayAgarwal007/First-Discovery-of-Preferences/blob/master/img/fluid5.png "TrDigital Preference")
+![Digital Preference](https://github.com/AkshayAgarwal007/First-Discovery-of-Preferences/blob/master/img/fluid5.png "Digital Preference")
 
-* A few more UI Mockups for Preferences Settings
+* **A few more UI Mockups for Preferences Settings :** This would be an interactive game for setting preferences up which is also serving the purpose of educating users to work with the keyboard.
 
 ![UI Mockups](https://github.com/AkshayAgarwal007/First-Discovery-of-Preferences/blob/master/img/fluid7.png "UI Mockups")
 
 ![UI Mockups](https://github.com/AkshayAgarwal007/First-Discovery-of-Preferences/blob/master/img/choic.png "UI Mockups")
 
-### Gameplay Preference
+### Gameplay Preferences
 
 *	Which background you prefer? Dim /Vivid [This can be again gamified]
 
 * Which character you prefer? Several character options.
-*
-*	Which enemy you prefer? Several enemy options
-*
-* Which arithmetic operations you would want to practice?
-*
-* Should the enemy be moving fast? Slow? How much?
 
-* You prefer timer or health based objectives ?
+*	Which enemy you prefer? Several enemy options.
 
-![1](https://github.com/AkshayAgarwal007/First-Discovery-of-Preferences/blob/master/img/enemy.png "1")
+* Which arithmetic operations would you want to practice ? Multiplication? Addition?
 
-![2](https://github.com/AkshayAgarwal007/First-Discovery-of-Preferences/blob/master/img/image3620.png "2")
+* You would want to take typing drills based on what? Names of fruits? Continents? 
 
-![3](https://github.com/AkshayAgarwal007/First-Discovery-of-Preferences/blob/master/img/vivid.png "3")
+* Should the enemy be moving fast? Slow? How much ?
 
-![4](https://github.com/AkshayAgarwal007/First-Discovery-of-Preferences/blob/master/img/new.png "4")
+* Do you prefer high score or timer or health/life based objectives ?
+
+**These are some UI Mockups based on user's gameplay preferences**
+
+![Enemy](https://github.com/AkshayAgarwal007/First-Discovery-of-Preferences/blob/master/img/enemy.png "enemy")
+
+* Dim background with power and high score based objectives.
+
+![Dim](https://github.com/AkshayAgarwal007/First-Discovery-of-Preferences/blob/master/img/image3620.png "Dim")
+
+* Vivid background with power and high score based objectives.
+
+![Vivid](https://github.com/AkshayAgarwal007/First-Discovery-of-Preferences/blob/master/img/vivid.png "Vivid")
+
+* Dim background with life/health based objectives.
+
+![Health](https://github.com/AkshayAgarwal007/First-Discovery-of-Preferences/blob/master/img/new.png "Health")
 
 ### Learning Preferences
 
-* An interactive tutorial on Multplication technique based on standard procedures 
+* An interactive tutorial on Multplication technique based on standard procedures.
 
 ![Learning Preference](https://github.com/AkshayAgarwal007/First-Discovery-of-Preferences/blob/master/img/mainr.png "Learning Preference")
 
@@ -106,14 +116,16 @@ As per my understanding the term “Learning to Learn” is self-descriptive. We
 
 ![Learning Preference](https://github.com/AkshayAgarwal007/First-Discovery-of-Preferences/blob/master/img/main3.png "Learning Preference")
 
-* **Mental Math tricks** : A simple Vedic math trick of multiplying a two-digit number with 11. Let us consider 52*11.
-52*11 = 5_2 = 5(5+2)2 = 572. Pingu taking the user through the interactive Mental Math tutorial (This will be more appealing when the animation could be seen)
+* **Mental Math tricks** : A simple Vedic math trick of multiplying a two-digit number with 11. Let us consider 52x11.
+52x11 = 5_2 = 5(5+2)2 = 572. Pingu taking the user through the interactive Mental Math tutorial (This will be more appealing when the animation could be seen)
 
 ![Learning Preference](https://github.com/AkshayAgarwal007/First-Discovery-of-Preferences/blob/master/img/main4.png "Learning Preference")
 
 * Practice exercises based on mental math tricks
 
 ![Learning Preference](https://github.com/AkshayAgarwal007/First-Discovery-of-Preferences/blob/master/img/main.png "Learning Preference")
+
+Now this would be based on branching and what the user spends more time on. If he spends more time on mental math tricks based exercises he'll branch off to a particular leaning preferences set and if he spends more time on standard procedures he would branch off to another.
 
 * Vocabulary and getting acsustomed with using keyboard (Typing the correct spelling would make the bird drop the fruit)
 
@@ -124,6 +136,8 @@ As per my understanding the term “Learning to Learn” is self-descriptive. We
 ![UI elements](https://github.com/AkshayAgarwal007/First-Discovery-of-Preferences/blob/master/img/image3344.png "UI elements")
 
 ### Other features
+
+**A timeline of users' preferences and how they change. This data would serve the process of learning to learn.
 
 **Instant Setup** : As qouted from http://gpii.net/ConsumerBenefits *"the GPII’s personalization profile will allow users to have the computer automatically invoke the features they need when they approach a computer. All they need to do is enter a code, plug in a USB drive, swipe a card, or bring their cell phone near the computer -- whatever action the user can conveniently perform."*
 
