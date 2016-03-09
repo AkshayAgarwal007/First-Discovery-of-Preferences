@@ -56,19 +56,19 @@ As per my understanding the term “Learning to Learn” is self-descriptive. We
 
 * Step 2 (The user is taken through an interactive game in which he would be using a particular method to achieve the posed mission)
 
-![Gamified approach](https://github.com/AkshayAgarwal007/First-Discovery-of-Preferences/blob/master/img/fluid2.png "Traditional way")
+![Preferece Discovery](https://github.com/AkshayAgarwal007/First-Discovery-of-Preferences/blob/master/img/fluid2.png "Preference Discovery")
 
 ** The virtual keyboard would be implemented in a far better way that doesn’t affect the game size and provides a seamless user experience. This is just for demonstration purpose.)
 
 * Step 3: The method adopted is nothing but the user’s preference (say in this case he uses the virtual keyboard to type the name of the fruit) and in this case it’s a digital preference. By telling the user about his preference we are applying the idea of learning to learn.
 
-![Gamified approach](https://github.com/AkshayAgarwal007/First-Discovery-of-Preferences/blob/master/img/fluid5.png "Traditional way")
+![Digital Preference](https://github.com/AkshayAgarwal007/First-Discovery-of-Preferences/blob/master/img/fluid5.png "TrDigital Preference")
 
 * A few more UI Mockups for Preferences Settings
 
-![Gamified approach](https://github.com/AkshayAgarwal007/First-Discovery-of-Preferences/blob/master/img/fluid7.png "Traditional way")
+![UI Mockups](https://github.com/AkshayAgarwal007/First-Discovery-of-Preferences/blob/master/img/fluid7.png "UI Mockups")
 
-![Gamified approach](https://github.com/AkshayAgarwal007/First-Discovery-of-Preferences/blob/master/img/choic.png "Traditional way")
+![UI Mockups](https://github.com/AkshayAgarwal007/First-Discovery-of-Preferences/blob/master/img/choic.png "UI Mockups")
 
 ### Gameplay Preference
 
@@ -83,3 +83,40 @@ As per my understanding the term “Learning to Learn” is self-descriptive. We
 * Should the enemy be moving fast? Slow? How much?
 
 * You prefer timer or health based objectives ?
+
+![1](https://github.com/AkshayAgarwal007/First-Discovery-of-Preferences/blob/master/img/enemy.png "1")
+
+![2](https://github.com/AkshayAgarwal007/First-Discovery-of-Preferences/blob/master/img/image3620.png "2")
+
+![3](https://github.com/AkshayAgarwal007/First-Discovery-of-Preferences/blob/master/img/vivid.png "3")
+
+![4](https://github.com/AkshayAgarwal007/First-Discovery-of-Preferences/blob/master/img/new.png "4")
+
+### Learning Preferences
+
+* An interactive tutorial on Multplication technique based on standard procedures 
+
+![Learning Preference](https://github.com/AkshayAgarwal007/First-Discovery-of-Preferences/blob/master/img/mainr.png "Learning Preference")
+
+* Practice exercises based on standard procedures 
+
+![Learning Preference](https://github.com/AkshayAgarwal007/First-Discovery-of-Preferences/blob/master/img/main6.png "Learning Preference")
+
+![Learning Preference](https://github.com/AkshayAgarwal007/First-Discovery-of-Preferences/blob/master/img/main3.png "Learning Preference")
+
+* **Mental Math tricks** : A simple Vedic math trick of multiplying a two-digit number with 11. Let us consider 52*11.
+52*11 = 5_2 = 5(5+2)2 = 572. Pingu taking the user through the interactive Mental Math tutorial (This will be more appealing when the animation could be seen)
+
+![Learning Preference](https://github.com/AkshayAgarwal007/First-Discovery-of-Preferences/blob/master/img/main4.png "Learning Preference")
+
+* Practice exercises based on mental math tricks
+
+![Learning Preference](https://github.com/AkshayAgarwal007/First-Discovery-of-Preferences/blob/master/img/main.png "Learning Preference")
+
+* Vocabulary and getting acsustomed with using keyboard (Typing the correct spelling would make the bird drop the fruit)
+
+![Learning Preference](https://github.com/AkshayAgarwal007/First-Discovery-of-Preferences/blob/master/img/main11.png "Learning Preference")
+
+* UI elements (in game dialogs)
+
+![UI elements](https://github.com/AkshayAgarwal007/First-Discovery-of-Preferences/blob/master/img/image3344.png "UI elements")
