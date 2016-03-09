@@ -15,9 +15,9 @@ Since it’s a rule of thumb that spending more time on designing the architectu
 
 Moreover, having an educational technology background and having worked with NPOs on similar project has helped me to get a better understanding of what is actually wanted out of the project and has enabled me to understand key terms like “Learning to Learn” and “Learning Preferences” which I feel a developer should completely understand before starting with this project. As a result of the understanding, I have been able to apply my creativity to bolster the idea and propose a gamified Infusion Preference Framework based educational game.
 
-Danayo’s link which pointed me towards the various demos of the Infusion Preference Framework and Justin_o’s link (http://gpii.net/) has cleared my doubts on the idea of setting preferences. http://gpii.net/ConsumerBenefits and http://gpii.net/EducationBenefits took me through the various benefits of GPII. **Assistance on Demand (AOD)**, **Access and Learning**, **Instant Setup** as mentioned in GPII Benefits Section would be achieved through the game.
+**Danayo’s** link which pointed me towards the various demos of the Infusion Preference Framework and **Justin_o’s** link (http://gpii.net/) has cleared my doubts on the idea of setting preferences. http://gpii.net/ConsumerBenefits and http://gpii.net/EducationBenefits took me through the various benefits of GPII. **Assistance on Demand (AOD)**, **Access and Learning**, **Instant Setup** as mentioned in GPII Benefits Section would be achieved through the game.
 
-As per my understanding the term “Learning to Learn” is self-descriptive. We all have different preferences while learning and we all learn in way which is different from others (it can be the learning modes like some prefer videos, some prefer written notes) but that process is implicit. Learning to learn makes that process explicit and helps become more effective learners through reflection and the application of learning strategies.
+As per my understanding the term “Learning to Learn” is self-descriptive. We all have different preferences while learning and we all learn in a way which is different from others (it can be the learning modes like some prefer videos, some prefer written notes) but that process is implicit. Learning to learn makes that process explicit and helps become more effective learners through reflection and the application of learning strategies.
 
 
 ##Objective of the game:
@@ -29,16 +29,18 @@ As per my understanding the term “Learning to Learn” is self-descriptive. We
 * Setting the digital preferences up in a gamified approach.
 
 * Guide user to a game which is based on his/her preferences.
-*
+
 * Since this is “aimed at user groups who may not have a lot of experience in using digital devices” a good game would be to teach them using the keyboard (may be it virtual/physical) itself.
 
 * Along with teaching them how to use the keyboard, considering that our target users are predominantly kids/students teaching them some mathematical skills and vocabulary would be good.
 
 * While playing the game they would be revealed about their learning preferences (again, involving them in a process of learning to learn). This would be again using a gamified approach.
 
-*	This would be more of a discovery rather than setting or choosing something up and would be based on what the user does while playing the game. Say there would be arithmetic problems and a gameplay would be such created that reveals whether the user prefers to use standard computational procedures or prefers mental tricks to solve them. In this way the kid/student would also learn some mental math skills to solve arithmetic problems. 
+*	This would be more of a discovery rather than setting or choosing something up and would be based on what the user does while playing the game. Say there would be arithmetic problems and a gameplay would be such created that reveals whether the user prefers to use standard computational procedures or prefers mental tricks to solve them revealing his learning preferences. In the process the kid/student would also learn some mental math skills to solve arithmetic problems. 
 
 *	At any point of time user would be free to change his/her preferences.
+
+* Implementing Access on Demand, Instant Setup and Access and Learning as mentioned in GPII Benefits section.
 
 *	Finally, a dashboard containing a timeline of how preferences change as the user continues through to the game.
 
@@ -127,7 +129,7 @@ As per my understanding the term “Learning to Learn” is self-descriptive. We
 
 Now this would be based on branching and what the user spends more time on. If he spends more time on mental math tricks based exercises he'll branch off to a particular leaning preferences set and if he spends more time on standard procedures he would branch off to another.
 
-* Vocabulary and getting acsustomed with using keyboard (Typing the correct spelling would make the bird drop the fruit)
+* Vocabulary and getting accustomed with the using keyboard (Typing the correct spelling would make the bird drop the fruit)
 
 ![Learning Preference](https://github.com/AkshayAgarwal007/First-Discovery-of-Preferences/blob/master/img/main11.png "Learning Preference")
 
@@ -137,18 +139,18 @@ Now this would be based on branching and what the user spends more time on. If h
 
 ### Other features
 
-**A timeline of users' preferences and how they change. This data would serve the process of learning to learn.
+**A timeline of users' preferences and how they change. This data would serve the process of learning to learn.**
 
 **Instant Setup** : As qouted from http://gpii.net/ConsumerBenefits *"the GPII’s personalization profile will allow users to have the computer automatically invoke the features they need when they approach a computer. All they need to do is enter a code, plug in a USB drive, swipe a card, or bring their cell phone near the computer -- whatever action the user can conveniently perform."*
 
-This could be achieved in the game. I've always found people having issues with playing games in devices other than their pesonal ones just because the setting don't match and setting up preferences for people having disablities could be a a difficult task. The various preference settings data would be stored in a cloud platform and each user will be assigned an unique ID. May they be playing the game in the browser (web app) or in their desktop or in their mobile phones (this would be achieved through Apache Cordova/Crosswalk project , they can enter that particular ID and the game would automatically invoke their prferences.
+This could be achieved in the game. I've always found people having issues with playing games in devices other than their pesonal ones just because the setting don't match and setting up preferences for people having disablities could be a a difficult task. The various preference settings data would be stored in a cloud platform and each user will be assigned an unique ID. May they be playing the game in the browser (web app) or in their desktop or in their mobile phones (this would be achieved through Apache Cordova/Crosswalk project), they can enter that particular ID and the game would automatically invoke their prferences. Recording the various data and possibly storing it in a SQL databse can be done using AJAX. Moreover I have won an IOT based Appathon competition organised by Juniper Network previous week so I'm very well versed in working with the cloud.
 
 **Assistance on demand** : As qouted from *"The GPII also enables a whole new range of assistive services-on-demand where a user can bring up an assistant to help them for just a minute."*
 
 For people with disabilties the game would have several assistive prefernces.
 
 * For **deaf users** there would be visual asistance and captions and instructions turned on which will assist them throughout the game.
-* For **users with poor vision** there would be voice assistance and alerts to help them through various parts of the game.
+* For **users with poor vision** there would be voice assistance and sound alerts to help them through various parts of the game.
 * For **blind users** voice assistance is not enough. The idea of setting preferences can be made real fun and interactive for them. I have rcently made a unity based gesture controlled game using the Myo armband and I can make this game to work with such devices. Setting preferences would be a fun then for blind people too as they would be able to do it just by moving their hand alongwith playing the game being assisted by the voice assistant. 
 
 **Access and Learning** : Already voice assistance is being implmented in the game for users with poor vision and blind users and that would also help users who can't read.
