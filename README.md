@@ -2,10 +2,12 @@
 
 **Akshay Agarwal**
 
-**Organization: Inclusive Design Institute**
+**Organization: Inclusive Design Institute (Fluid Project)**
 
 
-My CSS, JavaScript, HTML level is intermediate and I have developed quite a few games using JavaScript game frameworks (Quintus/Phaser). I have also made an HTML5 game using Blockly.js (Google’s visual programming editor builder) long back by interfacing the same with a Phaser game and hence interfacing the Infusion Preferences Framework with a Phaser game would be quite achievable.  
+My CSS, JavaScript, HTML level is intermediate and I have developed quite a few games using JavaScript game frameworks (Quintus/Phaser). I have also made an HTML5 game using Blockly.js (Google’s visual programming editor builder) long back by interfacing the same with a Phaser game and hence interfacing the Infusion Preferences Framework with a Phaser game would be quite achievable. The infusion components would have to rendered to the same canvas element on which Phaser renders or both can be clubbed side by side and in any case have to be interfaced as we do with Blockly.js. In the other case I would have to play with CSS and stylus to change a few UI elements and make it comply with the game UI elements. 
+
+Moreover, this would be one major aspect I would be working on till the GSOC Community Bonding period begins and make myself highly proficient with it before the coding begins.
 
 Instead of quickly beginning with coding and developing modules I thought to spend more time on understanding the idea since at the first sight it looks simple but going deep and understanding the various use cases brings out the actual challenge.
 
@@ -127,7 +129,7 @@ As per my understanding the term “Learning to Learn” is self-descriptive. We
 
 This could be achieved in the game. I've always found people having issues with playing games in devices other than their pesonal ones just because the setting don't match and setting up preferences for people having disablities could be a a difficult task. The various preference settings data would be stored in a cloud platform and each user will be assigned an unique ID. May they be playing the game in the browser (web app) or in their desktop or in their mobile phones (this would be achieved through Apache Cordova/Crosswalk project , they can enter that particular ID and the game would automatically invoke their prferences.
 
-** Assistance on demand** : As qouted from *"The GPII also enables a whole new range of assistive services-on-demand where a user can bring up an assistant to help them for just a minute."*
+**Assistance on demand** : As qouted from *"The GPII also enables a whole new range of assistive services-on-demand where a user can bring up an assistant to help them for just a minute."*
 
 For people with disabilties the game would have several assistive prefernces.
 
@@ -136,3 +138,4 @@ For people with disabilties the game would have several assistive prefernces.
 * For **blind users** voice assistance is not enough. The idea of setting preferences can be made real fun and interactive for them. I have rcently made a unity based gesture controlled game using the Myo armband and I can make this game to work with such devices. Setting preferences would be a fun then for blind people too as they would be able to do it just by moving their hand alongwith playing the game being assisted by the voice assistant. 
 
 **Access and Learning** : Already voice assistance is being implmented in the game for users with poor vision and blind users and that would also help users who can't read.
+
