@@ -13,7 +13,7 @@ Since it’s a rule of thumb that spending more time on designing the architectu
 
 Moreover, having an educational technology background and having worked with NPOs on similar project has helped me to get a better understanding of what is actually wanted out of the project and has enabled me to understand key terms like “Learning to Learn” and “Learning Preferences” which I feel a developer should completely understand before starting with this project. As a result of the understanding, I have been able to apply my creativity to bolster the idea and propose a gamified Infusion Preference Framework based educational game.
 
-Danayo’s link which pointed me towards the various demos of the Infusion Preference Framework and Justin_o’s link (http://gpii.net/) has cleared my doubts on the idea of setting preferences. http://gpii.net/ConsumerBenefits and http://gpii.net/EducationBenefits took me through the various benefits of GPII. Assistance on Demand (AOD) and Access and Learning would be achieved through the game.
+Danayo’s link which pointed me towards the various demos of the Infusion Preference Framework and Justin_o’s link (http://gpii.net/) has cleared my doubts on the idea of setting preferences. http://gpii.net/ConsumerBenefits and http://gpii.net/EducationBenefits took me through the various benefits of GPII. **Assistance on Demand (AOD)**, **Access and Learning**, **Instant Setup** as mentioned in GPII Benefits Section would be achieved through the game.
 
 As per my understanding the term “Learning to Learn” is self-descriptive. We all have different preferences while learning and we all learn in way which is different from others (it can be the learning modes like some prefer videos, some prefer written notes) but that process is implicit. Learning to learn makes that process explicit and helps become more effective learners through reflection and the application of learning strategies.
 
@@ -120,3 +120,19 @@ As per my understanding the term “Learning to Learn” is self-descriptive. We
 * UI elements (in game dialogs)
 
 ![UI elements](https://github.com/AkshayAgarwal007/First-Discovery-of-Preferences/blob/master/img/image3344.png "UI elements")
+
+### Other features
+
+**Instant Setup** : As qouted from http://gpii.net/ConsumerBenefits *"the GPII’s personalization profile will allow users to have the computer automatically invoke the features they need when they approach a computer. All they need to do is enter a code, plug in a USB drive, swipe a card, or bring their cell phone near the computer -- whatever action the user can conveniently perform."*
+
+This could be achieved in the game. I've always found people having issues with playing games in devices other than their pesonal ones just because the setting don't match and setting up preferences for people having disablities could be a a difficult task. The various preference settings data would be stored in a cloud platform and each user will be assigned an unique ID. May they be playing the game in the browser (web app) or in their desktop or in their mobile phones (this would be achieved through Apache Cordova/Crosswalk project , they can enter that particular ID and the game would automatically invoke their prferences.
+
+** Assistance on demand** : As qouted from *"The GPII also enables a whole new range of assistive services-on-demand where a user can bring up an assistant to help them for just a minute."*
+
+For people with disabilties the game would have several assistive prefernces.
+
+* For **deaf users** there would be visual asistance and captions and instructions turned on which will assist them throughout the game.
+* For **users with poor vision** there would be voice assistance and alerts to help them through various parts of the game.
+* For **blind users** voice assistance is not enough. The idea of setting preferences can be made real fun and interactive for them. I have rcently made a unity based gesture controlled game using the Myo armband and I can make this game to work with such devices. Setting preferences would be a fun then for blind people too as they would be able to do it just by moving their hand alongwith playing the game being assisted by the voice assistant. 
+
+**Access and Learning** : Already voice assistance is being implmented in the game for users with poor vision and blind users and that would also help users who can't read.
