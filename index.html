@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Preference Discovery</title>
+	<script src="phaser-2.0.6.min.js"></script>
+    <style type="text/css">
+
+		body {
+            margin: 0;
+			background-color: black;
+        }
+
+    </style>
+</head>
+<body>
+
+<script type="text/javascript">
+
+var game = new Phaser.Game(1366, 768, Phaser.AUTO, '', { preload: preload, create: create, update: update });
+
+function preload() {
+
+	game.load.image('layer1', 'assets/layer1.png');
+	game.load.image('layer2', 'assets/layer2.png');
+	game.load.image('layer3', 'assets/layer3.png');
+	game.load.image('layer4', 'assets/layer4.png');
+	game.load.image('tree', 'assets/tree.png');
+	game.load.image('mul', 'assets/mul.png');
+	this.load.image('ques', 'assets/ques.png');
+	game.load.image('board', 'assets/skate.png');
+	game.load.image('bullet', 'assets/bullet.png');
+	game.load.image('player', 'assets/pingu.png');
+	game.load.image('star', 'assets/star.png');
+	game.load.image('counter', 'assets/counter.png');
+	game.load.image('dialog', 'assets/dialog.png');
+	game.load.image('text', 'assets/text.png');
+	game.load.image('btn1', 'assets/btn1.png');
+	game.load.image('btn2', 'assets/btn2.png');
+	game.load.image('btn3', 'assets/btn3.png');
+	game.load.image('pickup', 'assets/pickup.png')
+	game.load.spritesheet('blast', 'assets/blast.png',201,201);
+	game.load.spritesheet("enemy", "assets/enemy.png",949, 688);
+	game.load.spritesheet("opt1", "assets/1.png",74, 74);
+	game.load.spritesheet("opt2", "assets/2.png",74, 74);
+
+
+
+}
+var platforms;
+var score;
+var choice;
+var key1;
+var key2;
+var key3;
+var block1;
+var block2;
+
+
+function create() {
+
+	this.input.maxPointers = 1;
+    this.scale.scaleMode = Phaser.ScaleManager.SHOW_ALL;
+    this.scale.pageAlignHorizontally = true;
+    this.scale.pageAlignVertically = true;
+    this.scale.setScreenSize(true);
+
+	game.physics.startSystem(Phaser.Physics.ARCADE);
+
+	score = 0;
+	choice=0;
+	set1=0;
+	set2=0;
+	option1 = "yes";
+	option2= "no";
+
+	game.add.sprite(0, 0,'layer1');
+	game.add.sprite(0, 0,'layer2');
+
+	dialog = game.add.sprite(1366/2-250, 250,'dialog');
+	dialog.scale.setTo(0.5,0.5);
+
+	counter = game.add.sprite(60, 42,'counter');
+	counter.scale.setTo(0.28,0.35);
+
+	star = game.add.sprite(35, 35,'star');
+	star.scale.setTo(0.35,0.34);
+
+	btn1 = game.add.sprite(1366-200, 25,'btn1');
+	btn1.scale.setTo(0.5,0.5);
+	btn2=game.add.sprite(1366-150, 25,'btn2');
+	btn2.scale.setTo(0.5,0.5);
+	btn3= game.add.sprite(1366-100, 25,'btn3');
+	btn3.scale.setTo(0.5,0.5);
+
+
+	tree1 = game.add.sprite(1000,game.world.height-92-310,'tree');
+	tree2 = game.add.sprite(850,game.world.height-92-250,'tree');
+	tree1.scale.setTo(0.65,0.65);
+	tree2.scale.setTo(0.65,0.62);
+
+	platforms = game.add.group();
+    platforms.enableBody = true;
+    var ground = platforms.create(0, game.world.height - 92, 'layer4');
+    ground.body.immovable = true;
+
+    player = game.add.sprite(200,game.world.height-200,'player');
+	game.physics.arcade.enable(player);
+    player.body.gravity.y = 300;
+    player.body.collideWorldBounds = false;
+	player.body.velocity.x=0;
+
+
+
+
+	scoreText = game.add.text(115, 50, score.toString(), { fontSize: '45px', fill: '#000' });
+	quesText = game.add.text(game.world.centerX-130, game.world.height/2.27, " Do you prefer 1 or 2 ?"
+	, { fontSize: '45px', fill: '#000', align:"center" });
+
+
+	block1 = game.add.sprite(1366-40, game.world.height - 560, 'opt1');
+    game.physics.arcade.enable(block1);
+    block1.body.gravity.y = 0;
+    block1.body.collideWorldBounds = false;
+	block1.scale.x *= -1;
+
+	block1.animations.add('right', [0, 1], 10, true);
+	block1.scale.setTo(0.8,0.8);
+	block1.body.velocity.x = -70;
+
+	block2 = game.add.sprite(50-35, game.world.height - 360, 'opt2');
+    game.physics.arcade.enable(block2);
+    block2.body.gravity.y = 0;
+    block2.body.collideWorldBounds = false;
+
+
+	block2.animations.add('right', [0, 1], 10, true);
+	block2.scale.setTo(0.8,0.8);
+	block2.body.velocity.x = -70;
+
+
+
+	enemy1 = game.add.sprite(1366, game.world.height - 600, 'enemy');
+    game.physics.arcade.enable(enemy1);
+    enemy1.body.gravity.y = 0;
+    enemy1.body.collideWorldBounds = false;
+
+
+    enemy1.animations.add('right', [0, 1, 2], 10, true);
+    enemy1.anchor.setTo(0.5,0.5);
+	enemy1.scale.setTo(0.12,0.12);
+	enemy1.scale.x *= -1;
+	enemy1.body.velocity.x = -70;
+
+
+	enemy2 = game.add.sprite(30, game.world.height - 400, 'enemy');
+    game.physics.arcade.enable(enemy2);
+    enemy2.body.gravity.y = 0;
+    enemy2.body.collideWorldBounds = false;
+
+
+    enemy2.animations.add('right', [0, 1, 2], 10, true);
+    enemy2.anchor.setTo(0.5,0.5);
+	enemy2.scale.setTo(0.12,0.12);
+	enemy2.body.velocity.x = -70;
+
+
+}
+
+
+function update() {
+
+	game.physics.arcade.collide(player, platforms);
+	game.physics.arcade.collide(block2, platforms);
+	game.physics.arcade.collide(block1, platforms);
+	game.physics.arcade.overlap(block1, player, finishMethod, null, this);
+	game.physics.arcade.overlap(block2, player, finishMethod, null, this);
+
+	enemy1.animations.play('right');
+	enemy1.body.velocity.x = -70;
+
+	enemy2.animations.play('right');
+	enemy2.body.velocity.x = 70;
+
+	if (set1==0)
+	{block1.body.velocity.x = -70;}
+	if (set2==0)
+	block2.body.velocity.x = +70;
+
+	if (enemy1.position.x<game.world.bounds.left+enemy1.width)
+	{
+		enemy1.position.x = 1366;
+		if (set1==0)
+		block1.position.x = 1366-40;
+	}
+
+	if (enemy2.position.x>game.world.bounds.right+enemy2.width)
+	{
+		enemy2.position.x = 0;
+		if (set2==0)
+		block2.position.x = 50-35;
+	}
+
+	if (game.input.keyboard.isDown(Phaser.Keyboard.ONE))
+	{	if (choice==0){
+		block1.frame=1;
+		choice=1;
+		block1.body.gravity.y =150;
+		block1.body.velocity.x=0;
+		set1=1;
+	}
+	}
+
+	if (game.input.keyboard.isDown(Phaser.Keyboard.TWO))
+	{	if(choice==0){
+		block2.frame=1;
+		choice=2;
+		block2.body.gravity.y =150;
+		block2.body.velocity.x=0;
+		set2=1;
+
+	}
+	}
+
+}
+
+
+
+
+function finishMethod () {
+
+	score = 10;
+	scoreText.setText(score.toString());
+	if (choice ==1)
+	{quesText.setText("You Prefer 1 !");
+	quesText.position.x = game.world.centerX-80;
+	block1.kill()
+	block2.kill()
+	}
+	else {
+	quesText.position.x = game.world.centerX-80;
+	quesText.setText("You Prefer 2 !")
+	block2.kill();
+	block1.kill();
+	}
+
+}
+
+
+
+</script>
+
+</body>
+</html>
